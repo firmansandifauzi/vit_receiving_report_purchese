@@ -1,0 +1,38 @@
+<openerp>
+	<data>
+
+		<template id="vit_tugas" inherit_id="purchase.report_purchaseorder_document">
+			<xpath expr="//p[@t-field='o.notes']" position="before">
+				<tr><h1>PURCHASE REPORT</h1>
+				<div class="row">
+					<div class="col-xs-4 pull-left">
+						<table class="table table-condensed">
+							<tr class="border-black">
+								<td><strong>Destination Location</strong></td>
+								<td class="text-right">
+									<span t-field="o.amount_untaxed"
+										t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+								</td>
+							</tr>
+							<tr>
+								<td>partner</td>
+								<td class="text-right">
+									<span t-field="o.amount_tax"
+										t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+								</td>
+							</tr>
+								<tr class="border-black">
+									<td><strong>creation date</strong></td>
+									<td class="text-right">
+										<span t-field="o.amount_total"
+											t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+									</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				</tr>
+			</xpath>
+		</template>
+	</data>
+</openerp>
