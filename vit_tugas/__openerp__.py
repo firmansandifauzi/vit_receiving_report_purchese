@@ -4,7 +4,7 @@
 	"depends": [
 		"purchase",
 	], 
-	"author": "agungarisandi4@gmail.com", 
+	"author": "firmansandifauzi@gmail.com", 
 	"category": "accounting", 
 	"description": """\
 
